@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login"
+    android:background="@android:color/black"
+    >
+
+
+    <LinearLayout tools:layout_editor_absoluteY="1dp"
+    android:layout_height="456dp"
+    android:layout_width="323dp"
+    tools:layout_editor_absoluteX="-1dp"
+    android:id="@+id/linearLayout"
+    android:orientation="vertical">
+
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/textNari"
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:textSize="36sp"
+        android:textColor="@android:color/holo_orange_light"
+        android:textAlignment="center"
+        android:text="Nari'"
+        android:fontFamily="serif"
+        />
+
+    <ImageView android:layout_height="130dp"
+        android:layout_width="match_parent"
+        android:id="@+id/imgnari"
+        app:srcCompat="@mipmap/ic_launcher_round"
+        android:layout_marginTop="10dp"/>
+
+    <EditText android:background="@android:color/white"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/editNombre"
+        android:textColor="@android:color/background_dark"
+        android:layout_marginTop="30dp"
+        android:singleLine="false"
+        android:selectAllOnFocus="false"
+        android:inputType="textPersonName"
+        android:hint="Ingresa tu nombre"
+        android:ems="10"/>
+
+    <EditText android:background="@android:color/white"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/editPassword"
+        android:textColor="@android:color/background_dark"
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword"
+        android:hint="Ingresa tu contraseña"
+        android:ems="10"/>
+
+    <Button android:background="@android:color/holo_red_dark"
+        android:layout_height="35dp"
+        android:layout_width="match_parent"
+        android:id="@+id/bottonAcceder"
+        android:typeface="sans"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@android:color/background_light"
+        android:textAlignment="center"
+        android:text="Acceder"
+        android:layout_marginTop="30dp"/>
+
+    <TextView android:background="@android:color/holo_green_dark"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/textRegistro"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@android:color/background_light"
+        android:textAlignment="center"
+        android:text="Registrarse"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
+
+
+
+
+
