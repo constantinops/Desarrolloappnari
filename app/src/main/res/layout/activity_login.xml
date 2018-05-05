@@ -9,78 +9,83 @@
     >
 
 
-    <LinearLayout tools:layout_editor_absoluteY="1dp"
-    android:layout_height="456dp"
-    android:layout_width="323dp"
-    tools:layout_editor_absoluteX="-1dp"
-    android:id="@+id/linearLayout"
-    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="319dp"
+        android:layout_height="453dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="0dp">
 
 
-    <TextView android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:id="@+id/textNari"
-        android:typeface="serif"
-        android:textStyle="bold"
-        android:textSize="36sp"
-        android:textColor="@android:color/holo_orange_light"
-        android:textAlignment="center"
-        android:text="Nari'"
-        android:fontFamily="serif"
-        />
+        <TextView
+            android:id="@+id/textNari"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Nari'"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_orange_light"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
 
-    <ImageView android:layout_height="130dp"
-        android:layout_width="match_parent"
-        android:id="@+id/imgnari"
-        app:srcCompat="@mipmap/ic_launcher_round"
-        android:layout_marginTop="10dp"/>
+        <ImageView
+            android:id="@+id/imgnari"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@mipmap/ic_launcher_round" />
 
-    <EditText android:background="@android:color/white"
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:id="@+id/editNombre"
-        android:textColor="@android:color/background_dark"
-        android:layout_marginTop="30dp"
-        android:singleLine="false"
-        android:selectAllOnFocus="false"
-        android:inputType="textPersonName"
-        android:hint="Ingresa tu nombre"
-        android:ems="10"/>
+        <EditText
+            android:id="@+id/editNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@android:color/white"
+            android:ems="10"
+            android:hint="Ingresa tu nombre"
+            android:inputType="textPersonName"
+            android:selectAllOnFocus="false"
+            android:singleLine="false"
+            android:textColor="@android:color/background_dark" />
 
-    <EditText android:background="@android:color/white"
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:id="@+id/editPassword"
-        android:textColor="@android:color/background_dark"
-        android:layout_marginTop="10dp"
-        android:inputType="textPassword"
-        android:hint="Ingresa tu contraseña"
-        android:ems="10"/>
+        <EditText
+            android:id="@+id/editPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white"
+            android:ems="10"
+            android:hint="Ingresa tu contraseña"
+            android:inputType="textPassword"
+            android:textColor="@android:color/background_dark" />
 
-    <Button android:background="@android:color/holo_red_dark"
-        android:layout_height="35dp"
-        android:layout_width="match_parent"
-        android:id="@+id/bottonAcceder"
-        android:typeface="sans"
-        android:textStyle="bold"
-        android:textSize="18sp"
-        android:textColor="@android:color/background_light"
-        android:textAlignment="center"
-        android:text="Acceder"
-        android:layout_marginTop="30dp"/>
+        <Button
+            android:id="@+id/bottonAcceder"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="30dp"
+            android:background="@android:color/holo_red_dark"
+            android:text="Acceder"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
 
-    <TextView android:background="@android:color/holo_green_dark"
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:id="@+id/textRegistro"
-        android:textStyle="bold"
-        android:textSize="18sp"
-        android:textColor="@android:color/background_light"
-        android:textAlignment="center"
-        android:text="Registrarse"
-        android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/textRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/holo_green_dark"
+            android:text="Registrarse"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
-</LinearLayout>
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
 

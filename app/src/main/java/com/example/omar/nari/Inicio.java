@@ -1,5 +1,6 @@
 package com.example.omar.nari;
 
+import android.app.FragmentManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -68,7 +69,10 @@ public class Inicio extends AppCompatActivity
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
+        //noinspection SimplifiableIfStatementse puso una img en la pantalla principal
+        //
+        //Constantinops committed
+        //c4cab06
         if (id == R.id.action_settings) {
 
             Intent x= new Intent(getApplicationContext(),login.class);
@@ -84,12 +88,15 @@ public class Inicio extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
+        //FragmentManager fragmentManager=getSupportFragmentManager();
 
         if (id == R.id.nav_camera) {
+            //fragmentManager.beginTransaction().replace(R.id.);
 
 
             // Handle the camera action
         } else if (id == R.id.nav_gallery) {
+
 
         } else if (id == R.id.nav_slideshow) {
 
