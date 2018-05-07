@@ -21,7 +21,11 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 public class  abcActivity extends AppCompatActivity implements aFragment.OnFragmentInteractionListener,
-BFragment.OnFragmentInteractionListener,CFragment.OnFragmentInteractionListener{
+BFragment.OnFragmentInteractionListener,CFragment.OnFragmentInteractionListener,DFragment.OnFragmentInteractionListener,EFragment.OnFragmentInteractionListener,FFragment.OnFragmentInteractionListener,GFragment.OnFragmentInteractionListener,
+HFragment.OnFragmentInteractionListener,IFragment.OnFragmentInteractionListener,JFragment.OnFragmentInteractionListener,KFragment.OnFragmentInteractionListener,LFragment.OnFragmentInteractionListener,MFragment.OnFragmentInteractionListener,
+NFragment.OnFragmentInteractionListener,OFragment.OnFragmentInteractionListener,PFragment.OnFragmentInteractionListener,QFragment.OnFragmentInteractionListener,RFragment.OnFragmentInteractionListener,SFragment.OnFragmentInteractionListener,
+TFragment.OnFragmentInteractionListener,UFragment.OnFragmentInteractionListener,VFragment.OnFragmentInteractionListener,WFragment.OnFragmentInteractionListener,XFragment.OnFragmentInteractionListener,YFragment.OnFragmentInteractionListener,
+ZFragment.OnFragmentInteractionListener{
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -116,9 +120,58 @@ BFragment.OnFragmentInteractionListener,CFragment.OnFragmentInteractionListener{
              switch (sectionNumber){
                  case 1:fragment=new aFragment();
                  break;
-                 case 2: fragment=new BFragment();
+                 case 2:fragment=new BFragment();
                  break;
                  case 3:fragment=new CFragment();
+                 break;
+                 case 4:fragment=new DFragment();
+                     break;
+                 case 5: fragment=new EFragment();
+                     break;
+                 case 6:fragment=new FFragment();
+                     break;
+                 case 7:fragment=new GFragment();
+                     break;
+                 case 8: fragment=new HFragment();
+                     break;
+                 case 9:fragment=new IFragment();
+                     break;
+                 case 10:fragment=new JFragment();
+                     break;
+                 case 11: fragment=new KFragment();
+                     break;
+                 case 12:fragment=new LFragment();
+                     break;
+                 case 13:fragment=new MFragment();
+                     break;
+                 case 14: fragment=new NFragment();
+                     break;
+                 case 15:fragment=new OFragment();
+                     break;
+                 case 16:fragment=new PFragment();
+                     break;
+                 case 17: fragment=new QFragment();
+                     break;
+                 case 18:fragment=new RFragment();
+                     break;
+                 case 19:fragment=new SFragment();
+                     break;
+                 case 20: fragment=new TFragment();
+                     break;
+                 case 21:fragment=new UFragment();
+                     break;
+                 case 22:fragment=new VFragment();
+                     break;
+                 case 23: fragment=new WFragment();
+                     break;
+                 case 24:fragment=new XFragment();
+                     break;
+                 case 25: fragment=new YFragment();
+                     break;
+                 case 26:fragment=new ZFragment();
+
+
+
 
              }
 
@@ -155,7 +208,7 @@ BFragment.OnFragmentInteractionListener,CFragment.OnFragmentInteractionListener{
         @Override
         public int getCount() {
             // Show 3 total pages.
-            return 3;
+            return 26;
         }
         
     }

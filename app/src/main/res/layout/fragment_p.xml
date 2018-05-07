@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".aFragment"
-    android:background="@android:color/white"
-    android:backgroundTint="@android:color/white"
-    >
+    tools:context=".PFragment">
 
     <!-- TODO: Update blank fragment layout -->
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -23,7 +18,7 @@
             android:layout_height="196dp"
             android:layout_marginTop="50dp"
 
-            android:src="@drawable/a" />
+            android:src="@drawable/p" />
 
         <ImageView
             android:id="@+id/imageButton"
