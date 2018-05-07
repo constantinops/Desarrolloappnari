@@ -49,7 +49,7 @@ public class login extends AppCompatActivity {
 
                     Cursor cursor= helper.consultarUsuario(txtusu.getText().toString(), txtpas.getText().toString());
                     if(cursor.getCount()>0){
-                        Intent x=new Intent(getApplicationContext(),Inicio.class);
+                        Intent x=new Intent(getApplicationContext(),abcActivity.class);
                         startActivity(x);
 
                     }else{
