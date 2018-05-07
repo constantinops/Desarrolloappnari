@@ -1,5 +1,6 @@
 package com.example.omar.nari;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -80,7 +81,9 @@ BFragment.OnFragmentInteractionListener,CFragment.OnFragmentInteractionListener{
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
+            Intent x= new Intent(getApplicationContext(),Inicio.class);
+            startActivity(x);
+
         }
 
         return super.onOptionsItemSelected(item);
@@ -88,7 +91,7 @@ BFragment.OnFragmentInteractionListener,CFragment.OnFragmentInteractionListener{
 
     @Override
     public void onFragmentInteraction(Uri uri) {
-        
+
     }
 
     /**

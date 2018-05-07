@@ -93,14 +93,15 @@ public class Inicio extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-        Fragment mi=null;
-        boolean fragmenselecionado=false;
+        //Fragment mi=null;
+        //boolean fragmenselecionado=false;
 
 
         if (id == R.id.nav_camera) {
-            mi=new animalito_Fragment();
-            fragmenselecionado=true;
-
+            //mi=new animalito_Fragment();
+            //fragmenselecionado=true;
+            Intent x=new Intent(getApplicationContext(),abcActivity.class);
+            startActivity(x);
         } else if (id == R.id.nav_gallery) {
 
 
@@ -113,11 +114,11 @@ public class Inicio extends AppCompatActivity
         } else if (id == R.id.nav_send) {
 
         }
-
+/*
         if (fragmenselecionado==true){
             getSupportFragmentManager().beginTransaction().replace(R.id.ecenario,mi).commit();
 
-        }
+        */
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
