@@ -21,11 +21,11 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 public class  abcActivity extends AppCompatActivity implements aFragment.OnFragmentInteractionListener,
-BFragment.OnFragmentInteractionListener,CFragment.OnFragmentInteractionListener,DFragment.OnFragmentInteractionListener,EFragment.OnFragmentInteractionListener,FFragment.OnFragmentInteractionListener,GFragment.OnFragmentInteractionListener,
-HFragment.OnFragmentInteractionListener,IFragment.OnFragmentInteractionListener,JFragment.OnFragmentInteractionListener,KFragment.OnFragmentInteractionListener,LFragment.OnFragmentInteractionListener,MFragment.OnFragmentInteractionListener,
-NFragment.OnFragmentInteractionListener,OFragment.OnFragmentInteractionListener,PFragment.OnFragmentInteractionListener,QFragment.OnFragmentInteractionListener,RFragment.OnFragmentInteractionListener,SFragment.OnFragmentInteractionListener,
-TFragment.OnFragmentInteractionListener,UFragment.OnFragmentInteractionListener,VFragment.OnFragmentInteractionListener,WFragment.OnFragmentInteractionListener,XFragment.OnFragmentInteractionListener,YFragment.OnFragmentInteractionListener,
-ZFragment.OnFragmentInteractionListener{
+        BFragment.OnFragmentInteractionListener,CFragment.OnFragmentInteractionListener,DFragment.OnFragmentInteractionListener,EFragment.OnFragmentInteractionListener,FFragment.OnFragmentInteractionListener,GFragment.OnFragmentInteractionListener,
+        HFragment.OnFragmentInteractionListener,IFragment.OnFragmentInteractionListener,JFragment.OnFragmentInteractionListener,KFragment.OnFragmentInteractionListener,LFragment.OnFragmentInteractionListener,MFragment.OnFragmentInteractionListener,
+        NFragment.OnFragmentInteractionListener,OFragment.OnFragmentInteractionListener,PFragment.OnFragmentInteractionListener,QFragment.OnFragmentInteractionListener,RFragment.OnFragmentInteractionListener,SFragment.OnFragmentInteractionListener,
+        TFragment.OnFragmentInteractionListener,UFragment.OnFragmentInteractionListener,VFragment.OnFragmentInteractionListener,WFragment.OnFragmentInteractionListener,XFragment.OnFragmentInteractionListener,YFragment.OnFragmentInteractionListener,
+        ZFragment.OnFragmentInteractionListener{
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -169,6 +169,7 @@ ZFragment.OnFragmentInteractionListener{
                  case 25: fragment=new YFragment();
                      break;
                  case 26:fragment=new ZFragment();
+                 break;
 
 
 
