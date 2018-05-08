@@ -22,7 +22,7 @@
             android:fontFamily="serif"
             android:text="Nari'"
             android:textAlignment="center"
-            android:textColor="@android:color/holo_orange_light"
+            android:textColor="@android:color/white"
             android:textSize="36sp"
             android:textStyle="bold"
             android:typeface="serif"
@@ -53,6 +53,7 @@
             android:layout_marginLeft="45dp"
             android:layout_marginRight="45dp"
 
+
             />
 
         <EditText
@@ -60,7 +61,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:background="@android:color/white"
             android:ems="10"
             android:hint="Nombre"
             android:inputType="textPersonName"
@@ -68,6 +68,7 @@
             android:textSize="18sp"
             android:layout_marginLeft="45dp"
             android:layout_marginRight="45dp"
+            android:background="#ff33b5e5"
             />
 
         <EditText
@@ -75,7 +76,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:background="@android:color/white"
+            android:background="#ff33b5e5"
             android:ems="10"
             android:hint="Contraseña"
             android:inputType="textPersonName"
@@ -89,13 +90,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:background="@android:color/white"
             android:ems="10"
             android:hint="Correo electronico"
             android:inputType="textPersonName"
             android:textColor="@android:color/background_dark"
             android:layout_marginLeft="45dp"
             android:layout_marginRight="45dp"
+            android:background="#ff33b5e5"
             />
 
         <Button
