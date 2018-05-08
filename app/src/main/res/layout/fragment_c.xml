@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CFragment">
+    tools:context=".CFragment"
+
+    >
 
     <!-- TODO: Update blank fragment layout -->
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -20,19 +20,19 @@
             android:layout_height="196dp"
             android:layout_marginTop="50dp"
 
-            android:src="@drawable/c" />
+            android:src="@drawable/b" />
 
         <ImageView
             android:id="@+id/imageButton"
             android:layout_width="143dp"
             android:layout_height="46dp"
-            android:src="@drawable/sonido"
+            android:src="@drawable/ic_action_bocina"
             android:layout_marginTop="100dp"
             android:layout_marginLeft="85dp"
             android:backgroundTint="@android:color/white"
 
             />
 
-    </LinearLayout>
 
+    </LinearLayout>
 </FrameLayout>

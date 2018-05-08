@@ -39,7 +39,7 @@
             android:layout_width="match_parent"
             android:layout_height="130dp"
             android:layout_marginTop="10dp"
-            app:srcCompat="@mipmap/ic_launcher_round"
+            app:srcCompat="@drawable/cara1"
             android:layout_marginLeft="45dp"
             android:layout_marginRight="45dp"
 
@@ -75,6 +75,7 @@
             android:inputType="textPassword"
             android:textColor="@android:color/background_light"
             android:background="#ff33b5e5"
+
             />
 
         <Button

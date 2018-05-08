@@ -29,7 +29,7 @@
             android:id="@+id/imageButton"
             android:layout_width="143dp"
             android:layout_height="46dp"
-            android:src="@drawable/sonido"
+            android:src="@drawable/ic_action_bocina"
             android:layout_marginTop="100dp"
             android:layout_marginLeft="85dp"
             android:backgroundTint="@android:color/white"
