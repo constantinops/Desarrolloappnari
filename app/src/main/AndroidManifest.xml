@@ -36,6 +36,10 @@
         <activity
             android:name=".colo.ColoresActivity"
             android:label="@string/title_activity_colores"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Frutas.FrutasActivity"
+            android:label="@string/title_activity_frutas"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

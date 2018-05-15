@@ -18,6 +18,7 @@ import android.view.MenuItem;
 
 import com.example.omar.nari.ABCdarios.abcActivity;
 import com.example.omar.nari.Animalitos.AnimalActivity;
+import com.example.omar.nari.Frutas.FrutasActivity;
 import com.example.omar.nari.Numero.NumeroActivity;
 import com.example.omar.nari.colo.ColoresActivity;
 
@@ -116,6 +117,10 @@ public class Inicio extends AppCompatActivity
             startActivity(x);
         } else if (id == R.id.nav_manage) {
             Intent x=new Intent(getApplicationContext(),NumeroActivity.class);
+            startActivity(x);
+
+        }else if(id==R.id.nav_frutas){
+            Intent x=new Intent(getApplicationContext(),FrutasActivity.class);
             startActivity(x);
 
         } else if (id == R.id.nav_share) {
