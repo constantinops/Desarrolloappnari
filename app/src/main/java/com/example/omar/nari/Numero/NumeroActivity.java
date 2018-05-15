@@ -1,5 +1,7 @@
 package com.example.omar.nari.Numero;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -18,9 +20,12 @@ import android.view.ViewGroup;
 
 import android.widget.TextView;
 
+import com.example.omar.nari.Inicio;
 import com.example.omar.nari.R;
 
-public class NumeroActivity extends AppCompatActivity {
+public class NumeroActivity extends AppCompatActivity implements CeroFragment.OnFragmentInteractionListener,UnoFragment.OnFragmentInteractionListener,DosFragment.OnFragmentInteractionListener,TresFragment.OnFragmentInteractionListener,
+CuatroFragment.OnFragmentInteractionListener,CincoFragment.OnFragmentInteractionListener,SeisFragment.OnFragmentInteractionListener,SieteFragment.OnFragmentInteractionListener,OchoFragment.OnFragmentInteractionListener,
+NueveFragment.OnFragmentInteractionListener,DiezFragment.OnFragmentInteractionListener{
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -80,10 +85,16 @@ public class NumeroActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
+            Intent x=new Intent(getApplicationContext(),Inicio.class);
+            startActivity(x);
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onFragmentInteraction(Uri uri) {
+
     }
 
     /**
@@ -103,11 +114,34 @@ public class NumeroActivity extends AppCompatActivity {
          * Returns a new instance of this fragment for the given section
          * number.
          */
-        public static PlaceholderFragment newInstance(int sectionNumber) {
-            PlaceholderFragment fragment = new PlaceholderFragment();
-            Bundle args = new Bundle();
-            args.putInt(ARG_SECTION_NUMBER, sectionNumber);
-            fragment.setArguments(args);
+        public static Fragment newInstance(int sectionNumber) {
+            Fragment fragment = null;
+
+            switch (sectionNumber){
+                case 1:fragment=new CeroFragment();
+                    break;
+                case 2:fragment=new UnoFragment();
+                    break;
+                case 3:fragment=new DosFragment();
+                    break;
+                case 4:fragment=new TresFragment();
+                    break;
+                case 5:fragment=new CuatroFragment();
+                    break;
+                case 6:fragment=new CincoFragment();
+                    break;
+                case 7:fragment=new SeisFragment();
+                    break;
+                case 8:fragment=new SieteFragment();
+                    break;
+                case 9:fragment=new OchoFragment();
+                    break;
+                case 10:fragment=new NueveFragment();
+                    break;
+                case 11:fragment=new DiezFragment();
+                    break;
+            }
+
             return fragment;
         }
 
@@ -141,7 +175,7 @@ public class NumeroActivity extends AppCompatActivity {
         @Override
         public int getCount() {
             // Show 3 total pages.
-            return 3;
+            return 11;
         }
     }
 }
