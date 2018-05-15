@@ -12,4 +12,8 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_abc">abcActivity</string>
     <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_animal">AnimalActivity</string>
+    <string name="title_activity_colorctivity">Colorctivity</string>
+    <string name="title_activity_numero">NumeroActivity</string>
+    <string name="title_activity_color">ColorActivity</string>
 </resources>

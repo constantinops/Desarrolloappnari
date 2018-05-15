@@ -1,4 +1,4 @@
-package com.example.omar.nari.colo;
+package com.example.omar.nari;
 
 import android.net.Uri;
 import android.support.design.widget.FloatingActionButton;
@@ -19,9 +19,8 @@ import android.view.ViewGroup;
 
 import android.widget.TextView;
 
-import com.example.omar.nari.R;
-
-public class ColorActivity extends AppCompatActivity implements AmarilloFragment.OnFragmentInteractionListener,AnaranjadoFragment.OnFragmentInteractionListener,AzulFragment.OnFragmentInteractionListener {
+public class ColorActivity extends AppCompatActivity implements aaFragment.OnFragmentInteractionListener,nnarFragment.OnFragmentInteractionListener,zulFragment.OnFragmentInteractionListener,
+CafeFragment.OnFragmentInteractionListener,GrisFragment.OnFragmentInteractionListener{
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -112,9 +111,18 @@ public class ColorActivity extends AppCompatActivity implements AmarilloFragment
         public static Fragment newInstance(int sectionNumber) {
             Fragment fragment=null;
             switch (sectionNumber){
-                case 1:fragment=new AmarilloFragment();
+                case 1:fragment=new aaFragment();
                     break;
-              
+                case 2:fragment=new nnarFragment();
+                    break;
+                case 3:fragment=new zulFragment();
+                    break;
+                case 4:fragment=new CafeFragment();
+                    break;
+                case 5:fragment=new GrisFragment();
+                    break;
+
+
 
             }
             return fragment;
@@ -151,7 +159,7 @@ public class ColorActivity extends AppCompatActivity implements AmarilloFragment
         @Override
         public int getCount() {
             // Show 3 total pages.
-            return 3;
+            return 5;
         }
     }
 }

@@ -1,4 +1,4 @@
-package com.example.omar.nari;
+package com.example.omar.nari.ABCdarios;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -20,12 +20,15 @@ import android.view.ViewGroup;
 
 import android.widget.TextView;
 
+import com.example.omar.nari.Inicio;
+import com.example.omar.nari.R;
+
 public class  abcActivity extends AppCompatActivity implements aFragment.OnFragmentInteractionListener,
         BFragment.OnFragmentInteractionListener,CFragment.OnFragmentInteractionListener,DFragment.OnFragmentInteractionListener,EFragment.OnFragmentInteractionListener,FFragment.OnFragmentInteractionListener,GFragment.OnFragmentInteractionListener,
         HFragment.OnFragmentInteractionListener,IFragment.OnFragmentInteractionListener,JFragment.OnFragmentInteractionListener,KFragment.OnFragmentInteractionListener,LFragment.OnFragmentInteractionListener,MFragment.OnFragmentInteractionListener,
         NFragment.OnFragmentInteractionListener,OFragment.OnFragmentInteractionListener,PFragment.OnFragmentInteractionListener,QFragment.OnFragmentInteractionListener,RFragment.OnFragmentInteractionListener,SFragment.OnFragmentInteractionListener,
         TFragment.OnFragmentInteractionListener,UFragment.OnFragmentInteractionListener,VFragment.OnFragmentInteractionListener,WFragment.OnFragmentInteractionListener,XFragment.OnFragmentInteractionListener,YFragment.OnFragmentInteractionListener,
-        ZFragment.OnFragmentInteractionListener{
+        ZFragment.OnFragmentInteractionListener {
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide

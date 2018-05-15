@@ -13,17 +13,24 @@
         <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/animales"
-            android:title="ANIMALES" />
+            android:title="ANIMALES"
+
+            />
         <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/actividades"
-            android:title="ACTIVIDADES" />
-        <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/inicio"
-            android:title="JUGAR"
+            android:title="COLORES"
 
             />
+        <item
+
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/inicio"
+            android:title="NUMEROS"
+
+            />
+
+
     </group>
 
     <item android:title="Communicate">

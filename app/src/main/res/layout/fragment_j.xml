@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".JFragment">
+    tools:context=".ABCdarios.JFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout

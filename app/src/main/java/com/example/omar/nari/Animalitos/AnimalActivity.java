@@ -1,4 +1,4 @@
-package com.example.omar.nari;
+package com.example.omar.nari.Animalitos;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -20,10 +20,13 @@ import android.view.ViewGroup;
 
 import android.widget.TextView;
 
+import com.example.omar.nari.Inicio;
+import com.example.omar.nari.R;
+
 public class AnimalActivity extends AppCompatActivity
         implements CaballoFragment.OnFragmentInteractionListener,
         PuercoFragment.OnFragmentInteractionListener,
-        VacaFragment.OnFragmentInteractionListener{
+        VacaFragment.OnFragmentInteractionListener {
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -115,16 +118,16 @@ public class AnimalActivity extends AppCompatActivity
         public static Fragment newInstance(int sectionNumber) {
             Fragment fragment=null;
             switch (sectionNumber){
-                case 1:fragment=new CaballoFragment();
-                    break;
-                case 2:fragment=new PuercoFragment();
-                    break;
-                case 3:fragment=new VacaFragment();
-                    break;
+            case 1:fragment=new CaballoFragment();
+                break;
+            case 2:fragment=new PuercoFragment();
+                break;
+            case 3:fragment=new VacaFragment();
+                break;
 
-            }
-            return fragment;
         }
+            return fragment;
+    }
 
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,

@@ -3,12 +3,9 @@ package com.example.omar.nari;
 
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -19,10 +16,14 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.example.omar.nari.ABCdarios.abcActivity;
+import com.example.omar.nari.Animalitos.AnimalActivity;
+import com.example.omar.nari.Numero.NumeroActivity;
+
 public class Inicio extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener,animalito_Fragment.OnFragmentInteractionListener{
+        implements NavigationView.OnNavigationItemSelectedListener{
 
-
+      public static int opcion;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,6 +49,8 @@ public class Inicio extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
         navigationView.setItemIconTintList(null);
+
+
     }
 
     @Override
@@ -93,8 +96,8 @@ public class Inicio extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-        //Fragment mi=null;
-        //boolean fragmenselecionado=false;
+      //Fragment mi=null;
+      //boolean fragmentSeleccionado=false;
 
 
         if (id == R.id.nav_camera) {
@@ -103,11 +106,16 @@ public class Inicio extends AppCompatActivity
             Intent x=new Intent(getApplicationContext(),abcActivity.class);
             startActivity(x);
         } else if (id == R.id.nav_gallery) {
-
-
+           // mi=new animalito_Fragment();
+            //fragmentSeleccionado=true;
+            Intent x=new Intent(getApplicationContext(),AnimalActivity.class);
+            startActivity(x);
         } else if (id == R.id.nav_slideshow) {
-
+            Intent x=new Intent(getApplicationContext(),ColorActivity.class);
+            startActivity(x);
         } else if (id == R.id.nav_manage) {
+            Intent x=new Intent(getApplicationContext(),NumeroActivity.class);
+            startActivity(x);
 
         } else if (id == R.id.nav_share) {
 
@@ -115,18 +123,17 @@ public class Inicio extends AppCompatActivity
 
         }
 /*
-        if (fragmenselecionado==true){
-            getSupportFragmentManager().beginTransaction().replace(R.id.ecenario,mi).commit();
+        if (fragmentSeleccionado==true) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.ecena, mi).commit();
 
-        */
+
+        }*/
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
 
-    @Override
-    public void onFragmentInteraction(Uri uri) {
 
-    }
+
 }

@@ -1,4 +1,4 @@
-package com.example.omar.nari;
+package com.example.omar.nari.Animalitos;
 
 import android.content.Context;
 import android.media.MediaPlayer;
@@ -9,7 +9,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.Toast;
+
+import com.example.omar.nari.R;
 
 
 /**

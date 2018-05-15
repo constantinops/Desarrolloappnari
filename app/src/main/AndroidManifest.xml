@@ -22,8 +22,20 @@
             android:label="@string/title_activity_inicio"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".abcActivity"
+            android:name=".ABCdarios.abcActivity"
             android:label="@string/title_activity_abc"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Animalitos.AnimalActivity"
+            android:label="@string/title_activity_animal"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Numero.NumeroActivity"
+            android:label="@string/title_activity_numero"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ColorActivity"
+            android:label="@string/title_activity_color"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

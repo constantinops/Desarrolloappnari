@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".WFragment">
+    tools:context=".ABCdarios.WFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
@@ -19,6 +19,15 @@
             android:layout_marginTop="50dp"
 
             android:src="@drawable/w" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No existe la letra en triki"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
         <ImageView
             android:id="@+id/imageButton"
