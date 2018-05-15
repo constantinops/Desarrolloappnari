@@ -26,7 +26,8 @@ import com.example.omar.nari.R;
 public class AnimalActivity extends AppCompatActivity
         implements CaballoFragment.OnFragmentInteractionListener,
         PuercoFragment.OnFragmentInteractionListener,
-        VacaFragment.OnFragmentInteractionListener {
+        VacaFragment.OnFragmentInteractionListener,BorregoFragment.OnFragmentInteractionListener,BurroFragment.OnFragmentInteractionListener,ChivoFragment.OnFragmentInteractionListener,
+ConejoFragment.OnFragmentInteractionListener,GallinaFragment.OnFragmentInteractionListener,GalloFragment.OnFragmentInteractionListener,PatoFragment.OnFragmentInteractionListener,PerroFragment.OnFragmentInteractionListener{
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -124,8 +125,25 @@ public class AnimalActivity extends AppCompatActivity
                 break;
             case 3:fragment=new VacaFragment();
                 break;
+            case 4:fragment=new BorregoFragment();
+                    break;
+            case 5:fragment=new BurroFragment();
+                    break;
+            case 6:fragment=new ChivoFragment();
+                    break;
+            case 7:fragment=new ConejoFragment();
+                    break;
+            case 8:fragment=new GallinaFragment();
+                    break;
+            case 9:fragment=new GalloFragment();
+                    break;
+            case 10:fragment=new PatoFragment();
+                    break;
+            case 11:fragment=new PerroFragment();
+                    break;
 
-        }
+
+            }
             return fragment;
     }
 
@@ -159,7 +177,7 @@ public class AnimalActivity extends AppCompatActivity
         @Override
         public int getCount() {
             // Show 3 total pages.
-            return 3;
+            return 11;
         }
     }
 }

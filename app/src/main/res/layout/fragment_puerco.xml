@@ -12,20 +12,23 @@
         android:orientation="vertical"
         >
 
+
         <ImageView
-            android:id="@+id/imageButton"
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="196dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/puercoo"
+            />
+
+        <ImageView
+            android:id="@+id/imageView5"
             android:layout_width="143dp"
             android:layout_height="46dp"
             android:src="@drawable/ic_action_bocina"
             android:layout_marginTop="100dp"
-            android:layout_marginLeft="85dp"
-            android:backgroundTint="@android:color/white"
-
+            android:layout_marginLeft="100dp"
             />
-
-
-
-
     </LinearLayout>
 
 </FrameLayout>
