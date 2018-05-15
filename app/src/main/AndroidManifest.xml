@@ -33,6 +33,10 @@
             android:name=".Numero.NumeroActivity"
             android:label="@string/title_activity_numero"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".colo.ColoresActivity"
+            android:label="@string/title_activity_colores"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

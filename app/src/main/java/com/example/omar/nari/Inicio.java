@@ -19,6 +19,7 @@ import android.view.MenuItem;
 import com.example.omar.nari.ABCdarios.abcActivity;
 import com.example.omar.nari.Animalitos.AnimalActivity;
 import com.example.omar.nari.Numero.NumeroActivity;
+import com.example.omar.nari.colo.ColoresActivity;
 
 public class Inicio extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener{
@@ -111,7 +112,7 @@ public class Inicio extends AppCompatActivity
             Intent x=new Intent(getApplicationContext(),AnimalActivity.class);
             startActivity(x);
         } else if (id == R.id.nav_slideshow) {
-            Intent x=new Intent(getApplicationContext(),ColorActivity.class);
+            Intent x=new Intent(getApplicationContext(), ColoresActivity.class);
             startActivity(x);
         } else if (id == R.id.nav_manage) {
             Intent x=new Intent(getApplicationContext(),NumeroActivity.class);

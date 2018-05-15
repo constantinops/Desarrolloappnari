@@ -16,4 +16,5 @@
     <string name="title_activity_colorctivity">Colorctivity</string>
     <string name="title_activity_numero">NumeroActivity</string>
     <string name="title_activity_color">ColorActivity</string>
+    <string name="title_activity_colores">ColoresActivity</string>
 </resources>
