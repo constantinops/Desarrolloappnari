@@ -24,9 +24,9 @@ import com.example.omar.nari.Inicio;
 import com.example.omar.nari.R;
 import com.example.omar.nari.colo.NarangaFragment;
 
-public class FrutasActivity extends AppCompatActivity implements AguacateFragment.OnFragmentInteractionListener,ChicharoFragment.OnFragmentInteractionListener,ChileFragment.OnFragmentInteractionListener,
+public class FrutasActivity extends AppCompatActivity implements NaranjaFragment.OnFragmentInteractionListener,MandarinaFragment.OnFragmentInteractionListener,AguacateFragment.OnFragmentInteractionListener,ChicharoFragment.OnFragmentInteractionListener,ChileFragment.OnFragmentInteractionListener,
 CocoFragment.OnFragmentInteractionListener,DuraznoFragment.OnFragmentInteractionListener,EloteFragment.OnFragmentInteractionListener,FresaFragment.OnFragmentInteractionListener,GranadaFragment.OnFragmentInteractionListener,
-HongosFragment.OnFragmentInteractionListener,JitomateFragment.OnFragmentInteractionListener,LimaFragment.OnFragmentInteractionListener,ManzanaFragment.OnFragmentInteractionListener,NaranjaFragment.OnFragmentInteractionListener,
+HongosFragment.OnFragmentInteractionListener,JitomateFragment.OnFragmentInteractionListener,LimaFragment.OnFragmentInteractionListener,ManzanaFragment.OnFragmentInteractionListener,
 PapaFragment.OnFragmentInteractionListener,PeraFragment.OnFragmentInteractionListener,RabanosFragment.OnFragmentInteractionListener,SandiaFragment.OnFragmentInteractionListener,zanahoriaFragment.OnFragmentInteractionListener
 {
 
@@ -147,7 +147,7 @@ PapaFragment.OnFragmentInteractionListener,PeraFragment.OnFragmentInteractionLis
                         break;
                case 13:fragment=new ManzanaFragment();
                         break;
-               case 14:fragment=new NarangaFragment();
+               case 14:fragment=new NaranjaFragment();
                         break;
                case 15:fragment=new PapaFragment();
                         break;
