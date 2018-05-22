@@ -14,7 +14,7 @@
 
 
         <ImageView
-            android:id="@+id/puercos"
+            android:id="@+id/imgpuerco"
             android:layout_width="match_parent"
             android:layout_height="196dp"
             android:layout_marginTop="50dp"

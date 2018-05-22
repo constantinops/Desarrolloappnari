@@ -14,7 +14,7 @@
 
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/imagchivo"
             android:layout_width="match_parent"
             android:layout_height="196dp"
             android:layout_marginTop="50dp"
@@ -22,7 +22,7 @@
             />
 
         <ImageView
-            android:id="@+id/imageView5"
+            android:id="@+id/btnchivo"
             android:layout_width="143dp"
             android:layout_height="46dp"
             android:src="@drawable/ic_action_bocina"
