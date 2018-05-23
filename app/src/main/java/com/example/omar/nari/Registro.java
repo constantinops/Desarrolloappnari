@@ -46,8 +46,8 @@ public class Registro extends AppCompatActivity {
                         Toast.LENGTH_LONG).show();
 
                 Intent i=new Intent(getApplicationContext(),login.class);
-
                 startActivity(i);
+
 
 
             }

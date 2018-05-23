@@ -7,6 +7,9 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".Inicio"
-    tools:showIn="@layout/app_bar_inicio">
+    tools:showIn="@layout/app_bar_inicio"
+    android:background="@drawable/pantallaprincipal"
+
+    >
 
 </android.support.constraint.ConstraintLayout>
