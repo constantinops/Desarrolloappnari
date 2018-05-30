@@ -65,8 +65,9 @@ public class CaballoFragment extends Fragment {
 
     public void sonido(View v){
 
-
-       Toast.makeText(getContext(),"hola",Toast.LENGTH_LONG).show();
+        mp =MediaPlayer.create(getContext(),R.raw.caballos);
+        mp.start();
+       //Toast.makeText(getContext(),"hola",Toast.LENGTH_LONG).show();
 
     }
 

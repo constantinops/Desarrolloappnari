@@ -52,8 +52,9 @@ public class ChivoFragment extends Fragment {
 
 
     public void sonido(View v) {
-
-        Toast.makeText(getContext(), "hola ", Toast.LENGTH_LONG).show();
+        mp =MediaPlayer.create(getContext(),R.raw.chivos);
+        mp.start();
+        //Toast.makeText(getContext(), "hola ", Toast.LENGTH_LONG).show();
 
     }
 

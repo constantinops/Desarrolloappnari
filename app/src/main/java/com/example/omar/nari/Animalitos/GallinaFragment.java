@@ -51,8 +51,10 @@ public class GallinaFragment extends Fragment {
 
 
     public void sonido(View v) {
+        mp =MediaPlayer.create(getContext(),R.raw.gallinas);
+        mp.start();
 
-        Toast.makeText(getContext(), "hola ", Toast.LENGTH_LONG).show();
+        //Toast.makeText(getContext(), "hola ", Toast.LENGTH_LONG).show();
 
     }
 

@@ -56,8 +56,10 @@ public class BurroFragment extends Fragment {
 
 
     public void sonido(View v) {
+        mp =MediaPlayer.create(getContext(),R.raw.burros);
+        mp.start();
 
-        Toast.makeText(getContext(), "hola ", Toast.LENGTH_LONG).show();
+        //Toast.makeText(getContext(), "hola ", Toast.LENGTH_LONG).show();
 
     }
 
@@ -65,7 +67,7 @@ public class BurroFragment extends Fragment {
 
         mp =MediaPlayer.create(getContext(),R.raw.burro);
         mp.start();
-    }
+}
 
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
