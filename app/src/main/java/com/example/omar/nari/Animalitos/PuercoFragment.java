@@ -54,6 +54,7 @@ public class PuercoFragment extends Fragment {
 
     public void sonido(View v) {
 
+
         Toast.makeText(getContext(), "hola ", Toast.LENGTH_LONG).show();
 
 
