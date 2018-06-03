@@ -1,49 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:showIn="navigation_view">
+    tools:showIn="navigation_view"
+
+    >
 
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_camera"
-            android:icon="@drawable/abc"
+            android:icon="@drawable/abcd"
             android:title="ABECEDARIOS"
 
             />
         <item
             android:id="@+id/nav_gallery"
-            android:icon="@drawable/animales"
+            android:icon="@drawable/animal"
             android:title="ANIMALES"
 
 
             />
         <item
             android:id="@+id/nav_slideshow"
-            android:icon="@drawable/actividades"
+            android:icon="@drawable/color"
             android:title="COLORES"
 
             />
         <item
 
             android:id="@+id/nav_manage"
-            android:icon="@drawable/inicio"
+            android:icon="@drawable/numero"
             android:title="NUMEROS"
             android:textColor="@android:color/black"
 
 
             />
-        <item
+       <!-- <item
 
             android:id="@+id/nav_frutas"
             android:icon="@drawable/inicio"
             android:title="FRUTAS"
 
             />
+            -->
 
 
 
     </group>
-
+<!--
     <item android:title="Communicate">
         <menu>
             <item
@@ -55,6 +58,6 @@
                 android:icon="@drawable/ic_menu_send"
                 android:title="Send" />
         </menu>
-    </item>
+    </item> -->
 
 </menu>

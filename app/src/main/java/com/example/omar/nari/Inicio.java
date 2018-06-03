@@ -112,7 +112,7 @@ public class Inicio extends AppCompatActivity
             Intent x=new Intent(getApplicationContext(),NumeroActivity.class);
             startActivity(x);
 
-        }else if(id==R.id.nav_frutas){
+        }/*else if(id==R.id.nav_frutas){
             Intent x=new Intent(getApplicationContext(),FrutasActivity.class);
             startActivity(x);
 

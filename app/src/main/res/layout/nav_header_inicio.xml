@@ -12,6 +12,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:theme="@style/ThemeOverlay.AppCompat.Dark"
     app:srcCompat="@drawable/fondo"
+
     >
 
     <ImageView
@@ -38,6 +39,10 @@
         android:layout_height="wrap_content"
         android:backgroundTint="@android:color/black"
         android:text="BIENVENIDO A  NARI'"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
 </LinearLayout>

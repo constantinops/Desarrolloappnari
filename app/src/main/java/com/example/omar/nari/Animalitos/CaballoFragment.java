@@ -71,7 +71,7 @@ public class CaballoFragment extends Fragment {
 
         mp =MediaPlayer.create(getContext(),R.raw.caballos);
         mp.start();
-        letras.setText("hola");
+        letras.setText("Guaiu");
 
        //Toast.makeText(getContext(),"hola",Toast.LENGTH_LONG).show();
 
