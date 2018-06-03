@@ -36,7 +36,9 @@
             android:textAlignment="viewEnd"
             android:textAllCaps="false"
             android:textColor="@android:color/background_light"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="normal" />
 
     </android.support.design.widget.AppBarLayout>
 
