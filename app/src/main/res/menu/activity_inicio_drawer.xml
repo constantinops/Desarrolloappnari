@@ -28,6 +28,8 @@
             android:id="@+id/nav_manage"
             android:icon="@drawable/inicio"
             android:title="NUMEROS"
+            android:textColor="@android:color/black"
+
 
             />
         <item

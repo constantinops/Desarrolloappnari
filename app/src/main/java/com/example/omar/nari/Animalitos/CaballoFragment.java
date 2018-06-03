@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.omar.nari.R;
@@ -20,6 +21,7 @@ public class CaballoFragment extends Fragment {
 
 
    ImageView clic,caba;
+   TextView letras;
     private MediaPlayer mp;
 
     public CaballoFragment() {
@@ -38,8 +40,10 @@ public class CaballoFragment extends Fragment {
         //mp = MediaPlayer.create(this,R.raw.burroos);
         clic=(ImageView)v.findViewById(R.id.caballoss);
         caba=(ImageView)v.findViewById(R.id.imgcaballo);
+        letras=(TextView) v.findViewById(R.id.letra);
        // mp=MediaPlayer.create(this,R.raw.caballo);
         //mp=MediaPlayer.create(this,R.raw.burroos);
+        letras=(TextView) v.findViewById(R.id.letra);
 
         caba.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,6 +71,8 @@ public class CaballoFragment extends Fragment {
 
         mp =MediaPlayer.create(getContext(),R.raw.caballos);
         mp.start();
+        letras.setText("hola");
+
        //Toast.makeText(getContext(),"hola",Toast.LENGTH_LONG).show();
 
     }

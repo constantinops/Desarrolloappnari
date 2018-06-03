@@ -37,7 +37,7 @@ public class BurroFragment extends Fragment {
         burro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                burrostar(v);
+                burrostarr(v);
 
             }
         });
@@ -63,7 +63,7 @@ public class BurroFragment extends Fragment {
 
     }
 
-    public void burrostar(View v){
+    public void burrostarr(View v){
 
         mp =MediaPlayer.create(getContext(),R.raw.burro);
         mp.start();
