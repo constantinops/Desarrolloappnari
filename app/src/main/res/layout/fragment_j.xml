@@ -17,11 +17,10 @@
             android:layout_width="match_parent"
             android:layout_height="196dp"
             android:layout_marginTop="50dp"
-
             android:src="@drawable/j" />
 
         <ImageView
-            android:id="@+id/jj"
+            android:id="@+id/btnj"
             android:layout_width="143dp"
             android:layout_height="46dp"
             android:src="@drawable/ic_action_bocina"
