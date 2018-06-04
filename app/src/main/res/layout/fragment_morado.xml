@@ -17,7 +17,7 @@
             android:layout_height="196dp"
             android:layout_marginTop="50dp"
 
-            android:src="@drawable/a" />
+            android:src="@drawable/morados" />
 
         <ImageView
             android:id="@+id/imageButton"
@@ -29,6 +29,24 @@
             android:backgroundTint="@android:color/white"
 
             />
+        <TextView
+            android:id="@+id/letra"
+            android:layout_width="143dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="30sp"
+            android:typeface="normal" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/flechs" />
 
     </LinearLayout>
 

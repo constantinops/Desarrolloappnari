@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -17,23 +18,40 @@
             android:layout_width="match_parent"
             android:layout_height="196dp"
             android:layout_marginTop="50dp"
-
             android:src="@drawable/amarillo"
 
-
             />
-
 
         <ImageView
             android:id="@+id/imageButton"
             android:layout_width="143dp"
             android:layout_height="46dp"
             android:layout_marginLeft="100dp"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="70dp"
             android:backgroundTint="@android:color/white"
             android:src="@drawable/ic_action_bocina"
 
             />
+
+        <TextView
+            android:id="@+id/letra"
+            android:layout_width="143dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="30sp"
+            android:typeface="normal" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:src="@drawable/flecha1" />
 
     </LinearLayout>
 
