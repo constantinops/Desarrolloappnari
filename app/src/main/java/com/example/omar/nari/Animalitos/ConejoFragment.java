@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.omar.nari.R;
@@ -16,7 +17,7 @@ import com.example.omar.nari.R;
 public class ConejoFragment extends Fragment {
     ImageView clic,chivo;
     MediaPlayer mp;
-
+    TextView letras;
     public ConejoFragment() {
         // Required empty public constructor
     }
@@ -31,6 +32,7 @@ public class ConejoFragment extends Fragment {
         View v=inflater.inflate(R.layout.fragment_conejo, container, false);
         clic=(ImageView)v.findViewById(R.id.btnconejos);
         chivo=(ImageView)v.findViewById(R.id.imagconejo);
+        letras=(TextView) v.findViewById(R.id.letra);
 
         chivo.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,6 +58,7 @@ public class ConejoFragment extends Fragment {
 
         mp =MediaPlayer.create(getContext(),R.raw.conejos);
         mp.start();
+        letras.setText("Yato ");
         //Toast.makeText(getContext(), "hola ", Toast.LENGTH_LONG).show();
 
     }

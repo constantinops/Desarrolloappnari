@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.omar.nari.R;
@@ -16,7 +17,7 @@ import com.example.omar.nari.R;
 public class GallinaFragment extends Fragment {
     ImageView clic,gallina;
     MediaPlayer mp;
-
+    TextView letras;
     public GallinaFragment() {
         // Required empty public constructor
     }
@@ -29,6 +30,7 @@ public class GallinaFragment extends Fragment {
         View v=inflater.inflate(R.layout.fragment_gallina, container, false);
         clic=(ImageView)v.findViewById(R.id.btngallinas);
         gallina=(ImageView)v.findViewById(R.id.imaggallina);
+        letras=(TextView) v.findViewById(R.id.letra);
 
         gallina.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,6 +55,9 @@ public class GallinaFragment extends Fragment {
     public void sonido(View v) {
         mp =MediaPlayer.create(getContext(),R.raw.gallinas);
         mp.start();
+        letras.setText("Yuchée ");
+
+
 
         //Toast.makeText(getContext(), "hola ", Toast.LENGTH_LONG).show();
 

@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.omar.nari.R;
@@ -16,7 +17,7 @@ import com.example.omar.nari.R;
 
 public class PuercoFragment extends Fragment {
 
-
+    TextView letras;
     ImageView clic,puer;
     MediaPlayer mp;
 
@@ -32,6 +33,7 @@ public class PuercoFragment extends Fragment {
         View v=inflater.inflate(R.layout.fragment_puerco, container, false);
         clic=(ImageView)v.findViewById(R.id.puerco);
         puer=(ImageView)v.findViewById(R.id.imgpuerco);
+        letras=(TextView) v.findViewById(R.id.letra);
 
         puer.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,6 +58,7 @@ public class PuercoFragment extends Fragment {
 
         mp =MediaPlayer.create(getContext(),R.raw.cerdo);
         mp.start();
+        letras.setText("Guaiu");
         //Toast.makeText(getContext(), "hola ", Toast.LENGTH_LONG).show();
 
 

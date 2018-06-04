@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.omar.nari.R;
@@ -18,6 +19,7 @@ public class VacaFragment extends Fragment {
 
     ImageView clic,vaca;
     MediaPlayer mp;
+    TextView letras;
 
 
     public VacaFragment() {
@@ -32,6 +34,7 @@ public class VacaFragment extends Fragment {
         View v=inflater.inflate(R.layout.fragment_vaca, container, false);
         clic=(ImageView)v.findViewById(R.id.vacas);
         vaca=(ImageView)v.findViewById(R.id.imagvaca);
+        letras=(TextView) v.findViewById(R.id.letra);
 
         vaca.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,6 +59,7 @@ public class VacaFragment extends Fragment {
     public void sonido(View v) {
         mp =MediaPlayer.create(getContext(),R.raw.vacas);
         mp.start();
+        letras.setText("Guaiu");
         //Toast.makeText(getContext(), "hola ", Toast.LENGTH_LONG).show();
 
     }

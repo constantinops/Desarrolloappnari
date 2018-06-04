@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.omar.nari.R;
@@ -16,7 +17,7 @@ import com.example.omar.nari.R;
 
 public class BorregoFragment extends Fragment {
 
-
+    TextView letras;
     ImageView clic,borregos;
     MediaPlayer mp;
 
@@ -32,6 +33,7 @@ public class BorregoFragment extends Fragment {
         View v=inflater.inflate(R.layout.fragment_borrego, container, false);
         clic=(ImageView)v.findViewById(R.id.btnborregos);
         borregos=(ImageView)v.findViewById(R.id.imageborrego);
+        letras=(TextView) v.findViewById(R.id.letra);
 
         borregos.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,6 +58,7 @@ public class BorregoFragment extends Fragment {
 
         mp =MediaPlayer.create(getContext(),R.raw.borrego);
         mp.start();
+        letras.setText("Matsij i ");
         //Toast.makeText(getContext(), "hola ", Toast.LENGTH_LONG).show();
 
     }

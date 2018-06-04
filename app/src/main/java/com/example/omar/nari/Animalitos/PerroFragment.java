@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.omar.nari.R;
@@ -18,7 +19,7 @@ public class PerroFragment extends Fragment {
 
     ImageView clic,perro;
     MediaPlayer mp;
-
+    TextView letras;
 
 
 
@@ -34,6 +35,7 @@ public class PerroFragment extends Fragment {
         View v=inflater.inflate(R.layout.fragment_perro, container, false);
         clic=(ImageView)v.findViewById(R.id.btnperros);
         perro=(ImageView)v.findViewById(R.id.imagperro);
+        letras=(TextView) v.findViewById(R.id.letra);
 
         perro.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,7 +60,7 @@ public class PerroFragment extends Fragment {
     public void sonido(View v) {
         mp =MediaPlayer.create(getContext(),R.raw.perros);
         mp.start();
-
+        letras.setText("Xuwe");
         //Toast.makeText(getContext(), "hola ", Toast.LENGTH_LONG).show();
 
     }

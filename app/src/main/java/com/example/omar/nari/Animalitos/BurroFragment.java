@@ -17,7 +17,7 @@ import com.example.omar.nari.R;
 
 
 public class BurroFragment extends Fragment {
-
+    TextView letras;
     ImageView clic,burro;
     MediaPlayer mp;
     public BurroFragment() {
@@ -33,6 +33,7 @@ public class BurroFragment extends Fragment {
         View v=inflater.inflate(R.layout.fragment_burro, container, false);
         clic=(ImageView)v.findViewById(R.id.btnburro);
         burro=(ImageView)v.findViewById(R.id.imgburro);
+        letras=(TextView) v.findViewById(R.id.letra);
 
         burro.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,6 +59,7 @@ public class BurroFragment extends Fragment {
     public void sonido(View v) {
         mp =MediaPlayer.create(getContext(),R.raw.burros);
         mp.start();
+        letras.setText("Guaiu");
 
         //Toast.makeText(getContext(), "hola ", Toast.LENGTH_LONG).show();
 

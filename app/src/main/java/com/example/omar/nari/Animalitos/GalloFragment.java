@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.omar.nari.R;
@@ -17,7 +18,7 @@ import com.example.omar.nari.R;
 public class GalloFragment extends Fragment {
     ImageView clic,gallo;
     MediaPlayer mp;
-
+    TextView letras;
     public GalloFragment() {
         // Required empty public constructor
     }
@@ -30,6 +31,7 @@ public class GalloFragment extends Fragment {
         View v=inflater.inflate(R.layout.fragment_gallo, container, false);
         clic=(ImageView)v.findViewById(R.id.btngallos);
         gallo=(ImageView)v.findViewById(R.id.imagallo);
+        letras=(TextView) v.findViewById(R.id.letra);
 
         gallo.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,6 +56,8 @@ public class GalloFragment extends Fragment {
     public void sonido(View v) {
         mp =MediaPlayer.create(getContext(),R.raw.gallo);
         mp.start();
+        letras.setText("Guaiu");
+
         //Toast.makeText(getContext(), "hola ", Toast.LENGTH_LONG).show();
 
     }
