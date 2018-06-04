@@ -46,7 +46,7 @@ public class NueveFragment extends Fragment {
 
         mp =MediaPlayer.create(getContext(),R.raw.nueve);
         mp.start();
-        letras.setText("Matsij i ");
+        letras.setText("Hìn");
 
     }
 

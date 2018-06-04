@@ -46,7 +46,7 @@ public class CincoFragment extends Fragment {
 
         mp =MediaPlayer.create(getContext(),R.raw.cinco);
         mp.start();
-        letras.setText("Matsij i ");
+        letras.setText("Ùhunj");
 
     }
 

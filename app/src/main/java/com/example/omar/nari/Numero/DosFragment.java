@@ -47,7 +47,7 @@ public class DosFragment extends Fragment {
 
         mp =MediaPlayer.create(getContext(),R.raw.dos);
         mp.start();
-        letras.setText("Matsij i ");
+        letras.setText("Wwìi");
 
     }
 

@@ -48,7 +48,7 @@ public class CeroFragment extends Fragment {
 
         mp =MediaPlayer.create(getContext(),R.raw.cero);
         mp.start();
-        letras.setText("Matsij i ");
+        letras.setText("Zeroa");
 
     }
 

@@ -44,7 +44,7 @@ public class TresFragment extends Fragment {
 
         mp =MediaPlayer.create(getContext(),R.raw.tres);
         mp.start();
-        letras.setText("Matsij i ");
+        letras.setText("Wàhnin");
 
     }
 

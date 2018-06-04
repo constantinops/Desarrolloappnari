@@ -45,7 +45,7 @@ public class SieteFragment extends Fragment {
 
         mp =MediaPlayer.create(getContext(),R.raw.siete);
         mp.start();
-        letras.setText("Matsij i ");
+        letras.setText("Chìj");
 
     }
 

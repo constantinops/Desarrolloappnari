@@ -46,7 +46,7 @@ public class SeisFragment extends Fragment {
 
         mp =MediaPlayer.create(getContext(),R.raw.seis);
         mp.start();
-        letras.setText("Matsij i ");
+        letras.setText("Wàtanj");
 
     }
 

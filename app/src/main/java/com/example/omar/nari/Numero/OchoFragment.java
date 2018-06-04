@@ -44,7 +44,7 @@ public class OchoFragment extends Fragment {
 
         mp =MediaPlayer.create(getContext(),R.raw.ocho);
         mp.start();
-        letras.setText("Matsij i ");
+        letras.setText("Tìnj");
 
     }
 

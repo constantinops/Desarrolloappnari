@@ -47,7 +47,7 @@ public class UnoFragment extends Fragment {
 
         mp =MediaPlayer.create(getContext(),R.raw.uno);
         mp.start();
-        letras.setText("Matsij i ");
+        letras.setText("Hngòoj ");
 
     }
 

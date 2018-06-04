@@ -46,7 +46,7 @@ public class CuatroFragment extends Fragment {
 
         mp =MediaPlayer.create(getContext(),R.raw.cuatro);
         mp.start();
-        letras.setText("Matsij i ");
+        letras.setText("Gàhan");
 
     }
 

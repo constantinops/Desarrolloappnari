@@ -45,7 +45,7 @@ public class DiezFragment extends Fragment {
 
         mp =MediaPlayer.create(getContext(),R.raw.diez);
         mp.start();
-        letras.setText("Matsij i ");
+        letras.setText("Chìh");
 
     }
 
