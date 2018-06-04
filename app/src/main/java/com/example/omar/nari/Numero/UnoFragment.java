@@ -9,12 +9,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.omar.nari.R;
 
 
 public class UnoFragment extends Fragment {
-
+    TextView letras;
     ImageView clic;
     MediaPlayer mp;
 
@@ -30,6 +31,7 @@ public class UnoFragment extends Fragment {
 
         View v=inflater.inflate(R.layout.fragment_uno, container, false);
         clic=(ImageView)v.findViewById(R.id.btnuno);
+        letras=(TextView) v.findViewById(R.id.letra);
         clic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -45,6 +47,7 @@ public class UnoFragment extends Fragment {
 
         mp =MediaPlayer.create(getContext(),R.raw.uno);
         mp.start();
+        letras.setText("Matsij i ");
 
     }
 

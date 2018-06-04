@@ -9,11 +9,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.omar.nari.R;
 
 
 public class NueveFragment extends Fragment {
+    TextView letras;
     ImageView clic;
     MediaPlayer mp;
 
@@ -28,6 +30,7 @@ public class NueveFragment extends Fragment {
 
         View v=inflater.inflate(R.layout.fragment_nueve, container, false);
         clic=(ImageView)v.findViewById(R.id.btnnueve);
+        letras=(TextView) v.findViewById(R.id.letra);
         clic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -43,6 +46,7 @@ public class NueveFragment extends Fragment {
 
         mp =MediaPlayer.create(getContext(),R.raw.nueve);
         mp.start();
+        letras.setText("Matsij i ");
 
     }
 

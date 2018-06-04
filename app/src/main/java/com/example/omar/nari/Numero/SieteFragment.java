@@ -9,11 +9,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.omar.nari.R;
 
 public class SieteFragment extends Fragment {
-
+    TextView letras;
     ImageView clic;
     MediaPlayer mp;
 
@@ -28,6 +29,7 @@ public class SieteFragment extends Fragment {
 
         View v=inflater.inflate(R.layout.fragment_siete, container, false);
         clic=(ImageView)v.findViewById(R.id.btnsiete);
+        letras=(TextView) v.findViewById(R.id.letra);
         clic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -43,6 +45,7 @@ public class SieteFragment extends Fragment {
 
         mp =MediaPlayer.create(getContext(),R.raw.siete);
         mp.start();
+        letras.setText("Matsij i ");
 
     }
 
