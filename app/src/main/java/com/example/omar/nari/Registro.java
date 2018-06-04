@@ -33,7 +33,7 @@ public class Registro extends AppCompatActivity {
         txtPass=(EditText)findViewById(R.id.txtPassword);
         txtCor=(EditText)findViewById(R.id.txtCorreo);
 
-        registro.setOnClickListener(new View.OnClickListener() {
+        /*registro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -52,8 +52,43 @@ public class Registro extends AppCompatActivity {
 
             }
         });
+*/
 
 
+    }
+
+    public void registro(View view){
+
+        String nombre=txtNom.getText().toString();
+        String contrasena=txtPass.getText().toString();
+        String correo=txtCor.getText().toString();
+
+        if (nombre.length()==0){
+            Toast.makeText(this,"Ingresa un nombre",Toast.LENGTH_SHORT).show();
+
+
+        }if(contrasena.length()==0){
+
+            Toast.makeText(this,"Ingresa una contraseña",Toast.LENGTH_SHORT).show();
+
+
+        }if(correo.length()==0){
+
+            Toast.makeText(this,"ingresa un  correo",Toast.LENGTH_SHORT).show();
+
+        }if(nombre.length() !=0 && contrasena.length() !=0 && correo.length() !=0){
+            helper.abrir();
+            helper.insertarReg(String.valueOf(txtNom.getText()),
+                    String.valueOf(txtPass.getText()),
+                    String.valueOf(txtCor.getText()));
+            helper.cerrar();
+
+            Toast.makeText(this,"Registro en proceso...",Toast.LENGTH_SHORT).show();
+            Intent i=new Intent(getApplicationContext(),login.class);
+            startActivity(i);
+
+
+        }
 
     }
 
