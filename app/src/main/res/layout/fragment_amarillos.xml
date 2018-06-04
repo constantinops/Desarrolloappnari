@@ -27,7 +27,7 @@
             android:layout_width="143dp"
             android:layout_height="46dp"
             android:layout_marginLeft="100dp"
-            android:layout_marginTop="70dp"
+            android:layout_marginTop="100dp"
             android:backgroundTint="@android:color/white"
             android:src="@drawable/ic_action_bocina"
 
@@ -52,6 +52,7 @@
             android:layout_height="46dp"
             android:layout_marginLeft="200dp"
             android:src="@drawable/flecha1" />
+
 
     </LinearLayout>
 

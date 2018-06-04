@@ -48,6 +48,7 @@ public class BurroFragment extends Fragment {
             public void onClick(View v) {
                 sonido(v);
 
+
             }
         });
 
@@ -59,7 +60,9 @@ public class BurroFragment extends Fragment {
     public void sonido(View v) {
         mp =MediaPlayer.create(getContext(),R.raw.burros);
         mp.start();
+
         letras.setText("Guaiu");
+
 
         //Toast.makeText(getContext(), "hola ", Toast.LENGTH_LONG).show();
 
