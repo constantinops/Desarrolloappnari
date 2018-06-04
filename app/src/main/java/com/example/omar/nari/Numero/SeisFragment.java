@@ -29,6 +29,7 @@ public class SeisFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         View v=inflater.inflate(R.layout.fragment_seis, container, false);
+
         clic=(ImageView)v.findViewById(R.id.btnseis);
         letras=(TextView) v.findViewById(R.id.letra);
         clic.setOnClickListener(new View.OnClickListener() {
