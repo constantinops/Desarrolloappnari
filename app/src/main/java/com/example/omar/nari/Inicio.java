@@ -106,7 +106,7 @@ public class Inicio extends AppCompatActivity
             Intent x=new Intent(getApplicationContext(),AnimalActivity.class);
             startActivity(x);
         } else if (id == R.id.nav_slideshow) {
-            Intent x=new Intent(getApplicationContext(), ColoresActivity.class);
+            Intent x=new Intent(getApplicationContext(), MainColor.class);
             startActivity(x);
         } else if (id == R.id.nav_manage) {
             Intent x=new Intent(getApplicationContext(),NumeroActivity.class);

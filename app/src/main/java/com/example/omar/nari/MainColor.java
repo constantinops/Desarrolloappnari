@@ -1,6 +1,6 @@
-package com.example.omar.nari.Numero;
+package com.example.omar.nari;
 
-import android.content.Intent;
+import android.media.MediaPlayer;
 import android.net.Uri;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -18,14 +18,11 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
+import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.omar.nari.Inicio;
-import com.example.omar.nari.R;
+public class MainColor extends AppCompatActivity {
 
-public class NumeroActivity extends AppCompatActivity implements CeroFragment.OnFragmentInteractionListener,UnoFragment.OnFragmentInteractionListener,DosFragment.OnFragmentInteractionListener,TresFragment.OnFragmentInteractionListener,
-CuatroFragment.OnFragmentInteractionListener,CincoFragment.OnFragmentInteractionListener,SeisFragment.OnFragmentInteractionListener,SieteFragment.OnFragmentInteractionListener,OchoFragment.OnFragmentInteractionListener,
-NueveFragment.OnFragmentInteractionListener,DiezFragment.OnFragmentInteractionListener{
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -45,7 +42,7 @@ NueveFragment.OnFragmentInteractionListener,DiezFragment.OnFragmentInteractionLi
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_numero);
+        setContentView(R.layout.activity_main_color);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -57,7 +54,14 @@ NueveFragment.OnFragmentInteractionListener,DiezFragment.OnFragmentInteractionLi
         mViewPager = (ViewPager) findViewById(R.id.container);
         mViewPager.setAdapter(mSectionsPagerAdapter);
 
-
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+            }
+        });
 
     }
 
@@ -65,7 +69,7 @@ NueveFragment.OnFragmentInteractionListener,DiezFragment.OnFragmentInteractionLi
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_numero, menu);
+        getMenuInflater().inflate(R.menu.menu_main_color, menu);
         return true;
     }
 
@@ -78,22 +82,18 @@ NueveFragment.OnFragmentInteractionListener,DiezFragment.OnFragmentInteractionLi
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            Intent x=new Intent(getApplicationContext(),Inicio.class);
-            startActivity(x);
+            return true;
         }
 
         return super.onOptionsItemSelected(item);
     }
 
-    @Override
-    public void onFragmentInteraction(Uri uri) {
-
-    }
-
     /**
      * A placeholder fragment containing a simple view.
      */
-    public static class PlaceholderFragment extends Fragment {
+
+    //////////////////////////////////////////////////////
+    public static class PlaceholderFragment extends Fragment{
         /**
          * The fragment argument representing the section number for this
          * fragment.
@@ -107,46 +107,85 @@ NueveFragment.OnFragmentInteractionListener,DiezFragment.OnFragmentInteractionLi
          * Returns a new instance of this fragment for the given section
          * number.
          */
-        public static Fragment newInstance(int sectionNumber) {
-            Fragment fragment = null;
-
-            switch (sectionNumber){
-                case 1:fragment=new CeroFragment();
-                    break;
-                case 2:fragment=new UnoFragment();
-                    break;
-                case 3:fragment=new DosFragment();
-                    break;
-                case 4:fragment=new TresFragment();
-                    break;
-                case 5:fragment=new CuatroFragment();
-                    break;
-                case 6:fragment=new CincoFragment();
-                    break;
-                case 7:fragment=new SeisFragment();
-                    break;
-                case 8:fragment=new SieteFragment();
-                    break;
-                case 9:fragment=new OchoFragment();
-                    break;
-                case 10:fragment=new NueveFragment();
-                    break;
-                case 11:fragment=new DiezFragment();
-                    break;
-            }
-
+        public static PlaceholderFragment newInstance(int sectionNumber) {
+            PlaceholderFragment fragment = new PlaceholderFragment();
+            Bundle args = new Bundle();
+            args.putInt(ARG_SECTION_NUMBER, sectionNumber);
+            fragment.setArguments(args);
             return fragment;
         }
 
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_numero, container, false);
+            View rootView = inflater.inflate(R.layout.fragment_main_color, container, false);
             TextView textView = (TextView) rootView.findViewById(R.id.section_label);
             textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
             return rootView;
         }
     }
+
+
+    //////////////////////////////////////////////////////////////////////////////
+
+    public static class amarillo extends Fragment {
+        MediaPlayer mp;
+        ImageView  clic;
+        TextView  letras;
+        /**
+         * The fragment argument representing the section number for this
+         * fragment.
+         */
+        private static final String ARG_SECTION_NUMBER = "section_number";
+
+        public amarillo() {
+        }
+
+        /**
+         * Returns a new instance of this fragment for the given section
+         * number.
+         */
+        public static amarillo newInstance(int sectionNumber) {
+            amarillo fragment = new amarillo();
+            Bundle args = new Bundle();
+            args.putInt(ARG_SECTION_NUMBER, sectionNumber);
+            fragment.setArguments(args);
+            return fragment;
+        }
+
+        @Override
+        public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                                 Bundle savedInstanceState) {
+            View rootView = inflater.inflate(R.layout.amarillo, container, false);
+            clic=(ImageView)rootView.findViewById(R.id.imageButton);
+            letras=(TextView) rootView.findViewById(R.id.letra);
+            clic.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View rootView) {
+                    sonido(rootView);
+
+                }
+            });
+            return rootView;
+        }
+
+
+        public void sonido(View rootView) {
+
+            mp =MediaPlayer.create(getContext(),R.raw.cero);
+            mp.start();
+            letras.setText("Zeroa");
+
+        }
+
+
+
+    }
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////
 
     /**
      * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
@@ -162,29 +201,35 @@ NueveFragment.OnFragmentInteractionListener,DiezFragment.OnFragmentInteractionLi
         public Fragment getItem(int position) {
             // getItem is called to instantiate the fragment for the given page.
             // Return a PlaceholderFragment (defined as a static inner class below).
-            return PlaceholderFragment.newInstance(position + 1);
+
+            if(position==0){
+                return amarillo.newInstance(position + 1);
+
+            }else{
+                return PlaceholderFragment.newInstance(position + 1);
+            }
+
         }
 
         @Override
         public int getCount() {
             // Show 3 total pages.
-            return 11;
+            return 3;
         }
-        public CharSequence getpageTitle(int position){
+        public CharSequence getPageTitle(int position){
             switch (position){
 
                 case 0:
-                    return " cero";
-
+                    return "AMARILLO";
                 case 1:
-                    return  "uno";
+                    return "uno";
                 case 2:
-                    return "dos";
+                    return "amarillo";
             }
             return null;
 
         }
+
+
     }
-
-
 }

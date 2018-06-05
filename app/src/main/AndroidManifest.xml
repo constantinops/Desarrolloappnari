@@ -40,9 +40,11 @@
         <activity
             android:name=".Frutas.FrutasActivity"
             android:label="@string/title_activity_frutas"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".MainColor"
+            android:label="@string/title_activity_main_color"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

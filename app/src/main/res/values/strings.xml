@@ -18,4 +18,5 @@
     <string name="title_activity_color">ColorActivity</string>
     <string name="title_activity_colores">ColoresActivity</string>
     <string name="title_activity_frutas">FrutasActivity</string>
+    <string name="title_activity_main_color">MainColor</string>
 </resources>
